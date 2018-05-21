@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA33D4B1DBF026B00B46B82 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA33D4A1DBF026B00B46B82 /* GoogleMobileAds.framework */; };
+		BFA33D4D1DBF030D00B46B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D4C1DBF030D00B46B82 /* GoogleService-Info.plist */; };
+		BFA33D511DBF371700B46B82 /* CoinPickup.wav in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D501DBF371700B46B82 /* CoinPickup.wav */; };
+		BFA33D541DBFCE7C00B46B82 /* ClownCarChime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D531DBFCE7C00B46B82 /* ClownCarChime.mp3 */; };
+		BFA33D561DBFD08500B46B82 /* ClownCarChime.wav in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D551DBFD08500B46B82 /* ClownCarChime.wav */; };
+		BFA33D581DBFEC2E00B46B82 /* CarHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D571DBFEC2E00B46B82 /* CarHit.wav */; };
+		BFA33D5A1DBFFFD600B46B82 /* CarHiit.wav in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D591DBFFFD600B46B82 /* CarHiit.wav */; };
+		BFA33D5C1DC0019100B46B82 /* CarHiiit.wav in Resources */ = {isa = PBXBuildFile; fileRef = BFA33D5B1DC0019100B46B82 /* CarHiiit.wav */; };
 		BFD52FBC1DBC84630009CB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD52FBB1DBC84630009CB56 /* AppDelegate.swift */; };
 		BFD52FBE1DBC84630009CB56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFD52FBD1DBC84630009CB56 /* GameScene.sks */; };
 		BFD52FC01DBC84640009CB56 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BFD52FBF1DBC84640009CB56 /* Actions.sks */; };
@@ -15,9 +23,18 @@
 		BFD52FC71DBC84640009CB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD52FC51DBC84640009CB56 /* Main.storyboard */; };
 		BFD52FC91DBC84640009CB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD52FC81DBC84640009CB56 /* Assets.xcassets */; };
 		BFD52FCC1DBC84640009CB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD52FCA1DBC84640009CB56 /* LaunchScreen.storyboard */; };
+		BFD52FD51DBC8CD20009CB56 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD52FD41DBC8CD20009CB56 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFA33D4A1DBF026B00B46B82 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		BFA33D4C1DBF030D00B46B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFA33D501DBF371700B46B82 /* CoinPickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CoinPickup.wav; sourceTree = "<group>"; };
+		BFA33D531DBFCE7C00B46B82 /* ClownCarChime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClownCarChime.mp3; sourceTree = "<group>"; };
+		BFA33D551DBFD08500B46B82 /* ClownCarChime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ClownCarChime.wav; sourceTree = "<group>"; };
+		BFA33D571DBFEC2E00B46B82 /* CarHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CarHit.wav; sourceTree = "<group>"; };
+		BFA33D591DBFFFD600B46B82 /* CarHiit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CarHiit.wav; sourceTree = "<group>"; };
+		BFA33D5B1DC0019100B46B82 /* CarHiiit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CarHiiit.wav; sourceTree = "<group>"; };
 		BFD52FB81DBC84630009CB56 /* ClownCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClownCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD52FBB1DBC84630009CB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD52FBD1DBC84630009CB56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +45,7 @@
 		BFD52FC81DBC84640009CB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD52FCB1DBC84640009CB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD52FCD1DBC84640009CB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD52FD41DBC8CD20009CB56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +53,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA33D4B1DBF026B00B46B82 /* GoogleMobileAds.framework in Frameworks */,
+				BFD52FD51DBC8CD20009CB56 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA33D4E1DBF36C500B46B82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFA33D4F1DBF36F600B46B82 /* Audio */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFA33D4F1DBF36F600B46B82 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BFA33D5B1DC0019100B46B82 /* CarHiiit.wav */,
+				BFA33D591DBFFFD600B46B82 /* CarHiit.wav */,
+				BFA33D571DBFEC2E00B46B82 /* CarHit.wav */,
+				BFA33D551DBFD08500B46B82 /* ClownCarChime.wav */,
+				BFA33D531DBFCE7C00B46B82 /* ClownCarChime.mp3 */,
+				BFA33D501DBF371700B46B82 /* CoinPickup.wav */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
 		BFD52FAF1DBC84620009CB56 = {
 			isa = PBXGroup;
 			children = (
 				BFD52FBA1DBC84630009CB56 /* ClownCar */,
 				BFD52FB91DBC84630009CB56 /* Products */,
+				BFD52FD31DBC8CD20009CB56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +102,28 @@
 		BFD52FBA1DBC84630009CB56 /* ClownCar */ = {
 			isa = PBXGroup;
 			children = (
+				BFA33D4C1DBF030D00B46B82 /* GoogleService-Info.plist */,
+				BFA33D4A1DBF026B00B46B82 /* GoogleMobileAds.framework */,
 				BFD52FBB1DBC84630009CB56 /* AppDelegate.swift */,
 				BFD52FBD1DBC84630009CB56 /* GameScene.sks */,
 				BFD52FBF1DBC84640009CB56 /* Actions.sks */,
 				BFD52FC11DBC84640009CB56 /* GameScene.swift */,
 				BFD52FC31DBC84640009CB56 /* GameViewController.swift */,
-				BFD52FC51DBC84640009CB56 /* Main.storyboard */,
-				BFD52FC81DBC84640009CB56 /* Assets.xcassets */,
 				BFD52FCA1DBC84640009CB56 /* LaunchScreen.storyboard */,
+				BFD52FC51DBC84640009CB56 /* Main.storyboard */,
+				BFA33D4E1DBF36C500B46B82 /* Supporting Files */,
+				BFD52FC81DBC84640009CB56 /* Assets.xcassets */,
 				BFD52FCD1DBC84640009CB56 /* Info.plist */,
 			);
 			path = ClownCar;
+			sourceTree = "<group>";
+		};
+		BFD52FD31DBC8CD20009CB56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFD52FD41DBC8CD20009CB56 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +186,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA33D511DBF371700B46B82 /* CoinPickup.wav in Resources */,
+				BFA33D561DBFD08500B46B82 /* ClownCarChime.wav in Resources */,
 				BFD52FC71DBC84640009CB56 /* Main.storyboard in Resources */,
 				BFD52FBE1DBC84630009CB56 /* GameScene.sks in Resources */,
 				BFD52FC91DBC84640009CB56 /* Assets.xcassets in Resources */,
+				BFA33D5C1DC0019100B46B82 /* CarHiiit.wav in Resources */,
 				BFD52FCC1DBC84640009CB56 /* LaunchScreen.storyboard in Resources */,
+				BFA33D5A1DBFFFD600B46B82 /* CarHiit.wav in Resources */,
 				BFD52FC01DBC84640009CB56 /* Actions.sks in Resources */,
+				BFA33D581DBFEC2E00B46B82 /* CarHit.wav in Resources */,
+				BFA33D541DBFCE7C00B46B82 /* ClownCarChime.mp3 in Resources */,
+				BFA33D4D1DBF030D00B46B82 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +332,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PFEPFYUD7S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClownCar",
+				);
 				INFOPLIST_FILE = ClownCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveLombs.ClownCar;
@@ -285,6 +350,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PFEPFYUD7S;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClownCar",
+				);
 				INFOPLIST_FILE = ClownCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveLombs.ClownCar;
@@ -312,6 +382,7 @@
 				BFD52FD21DBC84640009CB56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

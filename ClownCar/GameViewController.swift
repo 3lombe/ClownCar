@@ -8,48 +8,100 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, GADBannerViewDelegate {
+    
+    
+    @IBOutlet var bannerView: GADBannerView!
+    
+    
+    var min = 4
+    
+    var tryAgain = 6
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scene = GameScene(size: view.bounds.size)
+        let skView = view as! SKView
+        skView.showsFPS = false
+        skView.showsNodeCount = false
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .resizeFill
+        skView.presentScene(scene)
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        
+        
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        bannerView.delegate = self
+        bannerView.adUnitID = "ca-app-pub-2382471766301173/1740184444"
+        bannerView.rootViewController = self
+        bannerView.load(request)
+        
+        
+        
     }
-
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    //Rate My App
+    override func viewDidAppear(_ animated: Bool) {
+        runAlert()
+    }
+    
+    func runAlert() {
+        
+        let neverShow = UserDefaults.standard.bool(forKey: "neverShow")
+        
+        print(neverShow)
+        
+        var numLaunch = UserDefaults.standard.integer(forKey: "numLaunch") + 1
+        
+        if !neverShow && numLaunch == min || numLaunch >= (min + tryAgain + 1) {
+            
+            showRateMe()
+            
+            numLaunch = min + 1
+            
+        }
+        
+        UserDefaults.standard.set(numLaunch, forKey: "numLaunch")
+        
+    }
+    
+    func showRateMe() {
+        
+        let alert = UIAlertController(title: "Rate Us", message: "Thanks for playing Clown Car", preferredStyle: UIAlertControllerStyle.alert)
+        
+        let link = URL(string: "itms-apps://itunes.apple.com/app/id1168437116")
+        
+        let rateAction = UIAlertAction(title: "Rate This App", style: UIAlertActionStyle.default) { (alertAction) in
+            
+            UIApplication.shared.openURL(link!)
+            
+        }
+        
+        let neverAction = UIAlertAction(title: "No Thanks", style: UIAlertActionStyle.default) { (alertAction) in
+            
+            UserDefaults.standard.set(true, forKey: "neverShow")
+            
+        }
+        
+        let maybeAction = UIAlertAction(title: "Maybe Later", style: UIAlertActionStyle.default, handler: nil)
+        
+        alert.addAction(rateAction)
+        
+        alert.addAction(neverAction)
+        
+        alert.addAction(maybeAction)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
 }
+
